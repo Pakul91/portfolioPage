@@ -1,0 +1,121 @@
+/* 1. Global styles */
+html {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(rgba(167, 160, 160, 0.637));
+  max-width: 900px;
+  margin: 2rem 5% 5% 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  padding-left: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.25rem;
+}
+
+/* 2. Header styles */
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+/* 3. Main styles */
+#about {
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+.resume-container {
+  display: flex;
+}
+
+.resume {
+  padding: 0.75rem 0 0 0.75rem;
+  margin-right: 2rem;
+  max-width: 60%;
+}
+
+.resume span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.img-container {
+  max-width: 30%;
+  margin-bottom: 5rem;
+}
+
+.portrait {
+  max-width: 100%;
+  border-radius: 10%;
+}
+
+/* 4. Project styles */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+}
+
+ul {
+  margin-top: -1rem;
+}
+
+.hover {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  transition: transform 1s;
+}
+
+.hover:hover {
+  cursor: pointer;
+  transform: translate(0.5rem);
+}
+
+/* 5. Skills styles */
+#skills {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+#skills img {
+  width: 3rem;
+}
+
+/* 7. Contact styles */
+.contact-container {
+  display: flex;
+}
+
+.contact-container img {
+  width: 3rem;
+  margin: 0.5rem 1rem 0 0;
+}
