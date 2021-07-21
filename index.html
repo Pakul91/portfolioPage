@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./resources/css/normalize.css" />
     <link rel="stylesheet" href="./resources/css/styles.css" />
-    <script defer src="/script.js"></script>
+    <script defer src="./script.js"></script>
     <title>Tomasz Pakulniewicz Portfolio</title>
   </head>
   <body>
@@ -61,14 +61,62 @@
       <section id="projects">
         <h2>Projects:</h2>
         <ul>
-          <li><p class="hover">Pig-Game</p></li>
-          <li><p class="hover">Bankist</p></li>
-          <li><p class="hover">Mapty</p></li>
-          <li><p class="hover" data-project="Forkify">Forkify</p></li>
+          <li><p class="project-list-item hover" data-project="pig-game">Pig-Game</p></li>
+          <li><p class="project-list-item hover" data-project="bankist">Bankist</p></li>
+          <li><p class="project-list-item hover" data-project="mapty">Mapty</p></li>
+          <li><p class="project-list-item hover" data-project="forkify">Forkify</p></li>
         <ul>
 
           <!-- PROJECTS TABS -->
-        <div data-project="Forkify" class="project-box hidden">
+
+
+          <!-- PIG GAME -->
+          <div id="pig-game" class="project-box hidden">
+            <button class="close-box">&times;</button>
+            <h2>PIG-GAME</h2>
+            <div class="project-img">
+              <img src="" alt="">
+            </div>
+            <p>PIG-GAME</p>
+            
+            <br>
+            <p>Live version: <a href="https://forkify-tomasz.netlify.app" target="_blank"> https://forkify-tomasz.netlify.app</a> </p>
+            <p>Github repo: <a href="https://github.com/Pakul91/forkify-course-video" target="_blank">https://github.com/Pakul91/forkify-course-video</a></p>
+            <p>Project build following the tutorial made by Jonas Schmedtmann. </p>
+          </div>
+
+          <!-- BANKIST -->
+          <div id="bankist" class="project-box hidden">
+            <button class="close-box">&times;</button>
+            <h2>BANKIST</h2>
+            <div class="project-img">
+              <img src="" alt="">
+            </div>
+            <p>BANKIST</p>
+            
+            <br>
+            <p>Live version: <a href="https://forkify-tomasz.netlify.app" target="_blank"> https://forkify-tomasz.netlify.app</a> </p>
+            <p>Github repo: <a href="https://github.com/Pakul91/forkify-course-video" target="_blank">https://github.com/Pakul91/forkify-course-video</a></p>
+            <p>Project build following the tutorial made by Jonas Schmedtmann. </p>
+          </div>
+
+          <!-- MAPTY -->
+          <div id="mapty" class="project-box hidden">
+            <button class="close-box">&times;</button>
+            <h2>MAPTY</h2>
+            <div class="project-img">
+              <img src="" alt="">
+            </div>
+            <p>MAPTY</p>
+            
+            <br>
+            <p>Live version: <a href="https://forkify-tomasz.netlify.app" target="_blank"> https://forkify-tomasz.netlify.app</a> </p>
+            <p>Github repo: <a href="https://github.com/Pakul91/forkify-course-video" target="_blank">https://github.com/Pakul91/forkify-course-video</a></p>
+            <p>Project build following the tutorial made by Jonas Schmedtmann. </p>
+          </div>
+
+          <!-- FORKIFY -->
+        <div id="forkify" class="project-box hidden">
           <button class="close-box">&times;</button>
           <h2>Forkify</h2>
           <div class="project-img">
