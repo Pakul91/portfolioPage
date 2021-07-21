@@ -10,9 +10,12 @@
     />
     <link rel="stylesheet" href="./resources/css/normalize.css" />
     <link rel="stylesheet" href="./resources/css/styles.css" />
+    <script defer src="/script.js"></script>
     <title>Tomasz Pakulniewicz Portfolio</title>
   </head>
   <body>
+
+    <!-- HEADER AND NAV-BAR -->
     <header>
       <h1>Tomasz Pakulniewcz</h1>
       <nav class="nav">
@@ -22,6 +25,8 @@
         <p><a href="./contact.html"> Contact</a></p>
       </nav>
     </header>
+
+    <!-- MAIN SECTION -->
     <main>
       <section id="about">
         <h2>About Me:</h2>
@@ -51,6 +56,8 @@
           </div>
         </div>
       </section>
+
+      <!-- PROJECTS -->
       <section id="projects">
         <h2>Projects:</h2>
         <ul>
@@ -60,11 +67,27 @@
           <li><p class="hover" data-project="Forkify">Forkify</p></li>
         <ul>
 
-        <div data-project="Forkify">
-
+          <!-- PROJECTS TABS -->
+        <div data-project="Forkify" class="project-box hidden">
+          <button class="close-box">&times;</button>
+          <h2>Forkify</h2>
+          <div class="project-img">
+            <img src="/resources/images/Forkify.png" alt="">
+          </div>
+          <p>A simple app to search for cooking recipes using an API database with over 100 000 recipes. Additionally, the user can add bookmarks to store favourite recipes and create custom-made ones and store them in the browser memory. There is no external database.</p>
+          
+          <br>
+          <p>Live version: <a href="https://forkify-tomasz.netlify.app" target="_blank"> https://forkify-tomasz.netlify.app</a> </p>
+          <p>Github repo: <a href="https://github.com/Pakul91/forkify-course-video" target="_blank">https://github.com/Pakul91/forkify-course-video</a></p>
+          <p>Project build following the tutorial made by Jonas Schmedtmann. </p>
         </div>
           
       </section>
+
+    <!-- OVERLAY -->
+    <div class="overlay hidden"></div>
+
+      <!-- SKILLS -->
       <section id="skills">
         <h3>Known:</h3>
         <img src="/resources/images/icons8-javascript-100.png" alt="" title="JavaScript">
