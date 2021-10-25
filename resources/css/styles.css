@@ -126,7 +126,8 @@ ul {
   margin-bottom: 2rem;
 }
 #skills img {
-  width: 3rem;
+  margin-right: 0.5rem;
+  height: 3rem;
 }
 
 /* 7. Contact styles */
@@ -142,9 +143,9 @@ ul {
 /* 8. Project box styles */
 .project-box {
   position: absolute;
-  top: 30rem;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 60%;
 
   background-color: rgba(255, 250, 250);
