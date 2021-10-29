@@ -4,6 +4,7 @@ const modalBox = document.querySelectorAll(".modal-box");
 const modalBoxAnchor = document.querySelectorAll(".modal-box-anchor");
 const closeBoxBtn = document.querySelectorAll(".close-box");
 const overlay = document.querySelector(".overlay");
+const goUp = document.querySelector(".go-up");
 
 // Sotore data from the clicked project
 let clickedProject = "";
@@ -30,6 +31,11 @@ const closeBox = function () {
 closeBoxBtn.forEach((btn) => btn.addEventListener("click", closeBox));
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") closeBox();
+});
+
+//go up on click
+goUp.addEventListener("click", () => {
+  window.scrollTo(0, 0);
 });
 
 window.addEventListener("popstate", (e) => {
