@@ -14,7 +14,6 @@
     <title>Tomasz Pakulniewicz Portfolio</title>
   </head>
   <body>
-
     <!--------------- HEADER AND NAV-BAR------------- -->
     <header>
       <h1>Tomasz Pakulniewcz</h1>
@@ -22,6 +21,7 @@
         <p><a href="#about">About Me</a></p>
         <p><a href="#projects">Projects</a></p>
         <p><a href="#skills">Skills</a></p>
+        <p><a href="#certificates">Certificates</a></p>
         <p><a href="./contact.html"> Contact</a></p>
       </nav>
     </header>
@@ -32,13 +32,13 @@
         <h2>About Me:</h2>
         <div class="resume-container">
           <div class="resume">
-            <span>HI!</span> I'm Tomasz, a beginner self-taught front-end developer.
-            Currently working as a CNC Programmer with almost 10 years of
-            experience in this field. I always had a passion and a knack for
-            automation, making things simpler and more user friendly. I've
-            turned my attention towards IT and front-end as it is evolving, a
-            fast-developing sector which gives a lot of opportunities to
-            learn and grow! <br /><br />
+            <span>HI!</span> I'm Tomasz, a beginner self-taught front-end
+            developer. Currently working as a CNC Programmer with almost 10
+            years of experience in this field. I always had a passion and a
+            knack for automation, making things simpler and more user friendly.
+            I've turned my attention towards IT and front-end as it is
+            evolving, a fast-developing sector which gives a lot of
+            opportunities to learn and grow! <br /><br />
             Currently, I'm learning from online courses and building small
             projects to hone my skills and knowledge. You can see some of them
             in the <a href="#projects">Projects</a> section. <br /><br />
@@ -49,9 +49,9 @@
           </div>
           <div class="img-container">
             <img
-              class="portrait"
+              class="pic"
               src="./resources/images/photo.png"
-              alt="Mine photo"
+              alt="My photo"
             />
           </div>
         </div>
@@ -60,123 +60,444 @@
       <!--------------- PROJECTS --------------->
       <section id="projects">
         <h2>Projects:</h2>
-        <p class="hint-small-screen">(Tap on the project name to display details!)</p>
+        <p class="hint-small-screen">
+          (Tap on the project name to display details!)
+        </p>
         <ul>
-          <li><p class="project-list-item hover" data-project="pig-game">Pig-Game</p></li>
-          <li><p class="project-list-item hover" data-project="bankist">Bankist</p></li>
-          <li><p class="project-list-item hover" data-project="mapty">Mapty</p></li>
-          <li><p class="project-list-item hover" data-project="forkify">Forkify</p></li>
-          <li><p class="project-list-item hover" data-project="reader-for-reddit">Reader-for-Reddit</p></li>
-        <ul>
-
-          <!------------ PROJECTS TABS ----------------->
-
-
-          <!--------------- PIG GAME ---------------->
-          <div id="pig-game" class="project-box hidden">
-            <button class="close-box">&times;</button>
-            <h2>Pig-Game</h2>
-            <div class="project-img">
-              <img src="./resources/images/Pig-Game.png" alt="">
-            </div>
-            <p>A simple game for 2 players where the goal is to collect 100points by rolling the dice. Project built do exercise DOM manipulation and incorporating simple logics.
+          <li>
+            <p
+              class="modal-box-anchor project skewed-background"
+              data-project="pig-game"
+            >
+              Pig-Game
             </p>
-            <p>Technologies used: HTML5, CSS3, JS.</p>
-              
-            
-            <br>
-            <p>Live version: <a href="https://pig-game-tp.netlify.app/" target="_blank"> https://pig-game-tp.netlify.app/</a> </p>
-            <p>Github repo: <a href="https://github.com/Pakul91/Pig-Game" target="_blank">https://github.com/Pakul91/Pig-Game</a></p>
-            <p>Project built following the tutorial made by Jonas Schmedtmann. </p>
-          </div>
+          </li>
+          <li>
+            <p
+              class="modal-box-anchor project skewed-background"
+              data-project="bankist"
+            >
+              Bankist
+            </p>
+          </li>
+          <li>
+            <p
+              class="modal-box-anchor project skewed-background"
+              data-project="mapty"
+            >
+              Mapty
+            </p>
+          </li>
+          <li>
+            <p
+              class="modal-box-anchor project skewed-background"
+              data-project="forkify"
+            >
+              Forkify
+            </p>
+          </li>
+          <li>
+            <p
+              class="modal-box-anchor project skewed-background"
+              data-project="reader-for-reddit"
+            >
+              Reader-for-Reddit
+            </p>
+          </li>
+        </ul>
 
-          <!----------------- BANKIST --------------->
-          <div id="bankist" class="project-box hidden">
-            <button class="close-box">&times;</button>
-            <h2>Bankist</h2>
-            <div class="project-img">
-              <img src="./resources/images/Bankist.png" alt="">
-            </div>
-            <p>A small online banking simulator where the user can log between two accounts, transfer money between them, check balance or request a loan. Project built to practise using arrays in real-life apps, work with internationalization timezones and counters.</p>
-            <p>Technologies used: HTML5, CSS3, JS, Intl API.</p>
-            
-            <br>
-            <p>Live version: <a href="https://bankist-tp.netlify.app/" target="_blank"> https://bankist-tp.netlify.app/</a> </p>
-            <p>Github repo: <a href="https://github.com/Pakul91/bankist-tp" target="_blank">https://github.com/Pakul91/bankist-tp</a></p>
-            <p>Project built following the tutorial made by Jonas Schmedtmann. </p>
-          </div>
+        <!------------ PROJECTS TABS ----------------->
 
-          <!---------------- MAPTY ------------------->
-          <div id="mapty" class="project-box hidden">
-            <button class="close-box">&times;</button>
-            <h2>MAPTY</h2>
-            <div class="project-img">
-              <img src="./resources/images/Mapty.png" alt="">
-            </div>
-            <p>Simple application to log your running and cycling activities with handy pins to show them on the map. Application built to practise working with classes, geolocation and external APIs.</p>
-            <p>Technologies used: HTML5, CSS3, JS, Geolocation API, Leaflet API. </p>
-            
-            <br>
-            <p>Live version: <a href="https://mapty-tp.netlify.app/" target="_blank"> https://mapty-tp.netlify.app/</a> </p>
-            <p>Github repo: <a href="https://github.com/Pakul91/mapty" target="_blank">https://github.com/Pakul91/mapty</a></p>
-            <p>Project built following the tutorial made by Jonas Schmedtmann. </p>
-          </div>
-
-          <!-------------- FORKIFY -------------------->
-        <div id="forkify" class="project-box hidden">
+        <!--------------- PIG GAME ---------------->
+        <div id="pig-game" class="modal-box hidden">
           <button class="close-box">&times;</button>
-          <h2>Forkify</h2>
+          <h2 class="skewed-background">Pig-Game</h2>
           <div class="project-img">
-            <img src="/resources/images/Forkify.png" alt="">
+            <img src="./resources/images/Pig-Game.png" alt="" />
           </div>
-          <p>A simple app to search for cooking recipes using an API database with over 100 000 recipes. Additionally, the user can add bookmarks to store favourite recipes and create custom-made ones and store them in the browser memory. There is no external database. Project built to practise working with modules, classes, asynchronus JS, external APIs and NPM</p>
-          <p>Technologies used: HTML5, CSS3, JS, Forkify API, NPM and Parcel </p>
-          
-          <br>
-          <p>Live version: <a href="https://forkify-tomasz.netlify.app" target="_blank"> https://forkify-tomasz.netlify.app</a> </p>
-          <p>Github repo: <a href="https://github.com/Pakul91/forkify-course-video" target="_blank">https://github.com/Pakul91/forkify-course-video</a></p>
-          <p>Project built following the tutorial made by Jonas Schmedtmann. </p>
+          <p>
+            A simple game for 2 players where the goal is to collect 100points
+            by rolling the dice. Project built do exercise DOM manipulation and
+            incorporating simple logics.
+          </p>
+          <p>Technologies used: HTML5, CSS3, JS.</p>
+
+          <br />
+          <p>
+            Live version:
+            <a href="https://pig-game-tp.netlify.app/" target="_blank">
+              https://pig-game-tp.netlify.app/</a
+            >
+          </p>
+          <p>
+            Github repo:
+            <a href="https://github.com/Pakul91/Pig-Game" target="_blank"
+              >https://github.com/Pakul91/Pig-Game</a
+            >
+          </p>
+          <p>Project built following the tutorial made by Jonas Schmedtmann.</p>
         </div>
 
-
-        <div id="reader-for-reddit" class="project-box hidden">
+        <!----------------- BANKIST --------------->
+        <div id="bankist" class="modal-box hidden">
           <button class="close-box">&times;</button>
-          <h2>Reader-fo_reddit</h2>
+          <h2 class="skewed-background">Bankist</h2>
           <div class="project-img">
-            <img src="/resources/images/Reader-for-Reddit.png" alt="">
+            <img src="./resources/images/Bankist.png" alt="" />
           </div>
-          <p>Reader for Reddit is a simple web app allowing users to search for interesting topics or communities on Reddit, scroll through the content, see a detailed view of posts, and check comments. App built to practice using React functional components in conjunction with React Router and Redux Toolkit. </p>
-          <p>Technologies used: HTML5, CSS3, JS, React 17, Redux, React-router, Reddit JSON API </p>
-          
-          <br>
-          <p>Live version: <a href="https://reader-for-reddit-tipi.netlify.app/" target="_blank"> https://reader-for-reddit-tipi.netlify.app/</a> </p>
-          <p>Github repo: <a href="https://github.com/Pakul91/reader-for-reddit" target="_blank">https://github.com/Pakul91/reader-for-reddit</a></p>
-          <p>Project built as a portfolio project from codecademy.com. </p>
+          <p>
+            A small online banking simulator where the user can log between two
+            accounts, transfer money between them, check balance or request a
+            loan. Project built to practise using arrays in real-life apps, work
+            with internationalization timezones and counters.
+          </p>
+          <p>Technologies used: HTML5, CSS3, JS, Intl API.</p>
+
+          <br />
+          <p>
+            Live version:
+            <a href="https://bankist-tp.netlify.app/" target="_blank">
+              https://bankist-tp.netlify.app/</a
+            >
+          </p>
+          <p>
+            Github repo:
+            <a href="https://github.com/Pakul91/bankist-tp" target="_blank"
+              >https://github.com/Pakul91/bankist-tp</a
+            >
+          </p>
+          <p>Project built following the tutorial made by Jonas Schmedtmann.</p>
         </div>
-          
+
+        <!---------------- MAPTY ------------------->
+        <div id="mapty" class="modal-box hidden">
+          <button class="close-box">&times;</button>
+          <h2 class="skewed-background">MAPTY</h2>
+          <div class="project-img">
+            <img src="./resources/images/Mapty.png" alt="" />
+          </div>
+          <p>
+            Simple application to log your running and cycling activities with
+            handy pins to show them on the map. Application built to practise
+            working with classes, geolocation and external APIs.
+          </p>
+          <p>
+            Technologies used: HTML5, CSS3, JS, Geolocation API, Leaflet API.
+          </p>
+
+          <br />
+          <p>
+            Live version:
+            <a href="https://mapty-tp.netlify.app/" target="_blank">
+              https://mapty-tp.netlify.app/</a
+            >
+          </p>
+          <p>
+            Github repo:
+            <a href="https://github.com/Pakul91/mapty" target="_blank"
+              >https://github.com/Pakul91/mapty</a
+            >
+          </p>
+          <p>Project built following the tutorial made by Jonas Schmedtmann.</p>
+        </div>
+
+        <!-------------- FORKIFY -------------------->
+        <div id="forkify" class="modal-box hidden">
+          <button class="close-box">&times;</button>
+          <h2 class="skewed-background">Forkify</h2>
+          <div class="project-img">
+            <img src="/resources/images/Forkify.png" alt="" />
+          </div>
+          <p>
+            A simple app to search for cooking recipes using an API database
+            with over 100 000 recipes. Additionally, the user can add bookmarks
+            to store favourite recipes and create custom-made ones and store
+            them in the browser memory. There is no external database. Project
+            built to practise working with modules, classes, asynchronus JS,
+            external APIs and NPM
+          </p>
+          <p>Technologies used: HTML5, CSS3, JS, Forkify API, NPM and Parcel</p>
+
+          <br />
+          <p>
+            Live version:
+            <a href="https://forkify-tomasz.netlify.app" target="_blank">
+              https://forkify-tomasz.netlify.app</a
+            >
+          </p>
+          <p>
+            Github repo:
+            <a
+              href="https://github.com/Pakul91/forkify-course-video"
+              target="_blank"
+              >https://github.com/Pakul91/forkify-course-video</a
+            >
+          </p>
+          <p>Project built following the tutorial made by Jonas Schmedtmann.</p>
+        </div>
+
+        <div id="reader-for-reddit" class="modal-box hidden">
+          <button class="close-box">&times;</button>
+          <h2 class="skewed-background">Reader-fo_reddit</h2>
+          <div class="project-img">
+            <img src="/resources/images/Reader-for-Reddit.png" alt="" />
+          </div>
+          <p>
+            Reader for Reddit is a simple web app allowing users to search for
+            interesting topics or communities on Reddit, scroll through the
+            content, see a detailed view of posts, and check comments. App built
+            to practice using React functional components in conjunction with
+            React Router and Redux Toolkit.
+          </p>
+          <p>
+            Technologies used: HTML5, CSS3, JS, React 17, Redux, React-router,
+            Reddit JSON API
+          </p>
+
+          <br />
+          <p>
+            Live version:
+            <a
+              href="https://reader-for-reddit-tipi.netlify.app/"
+              target="_blank"
+            >
+              https://reader-for-reddit-tipi.netlify.app/</a
+            >
+          </p>
+          <p>
+            Github repo:
+            <a
+              href="https://github.com/Pakul91/reader-for-reddit"
+              target="_blank"
+              >https://github.com/Pakul91/reader-for-reddit</a
+            >
+          </p>
+          <p>Project built as a portfolio project from codecademy.com.</p>
+        </div>
       </section>
 
-    <!------------- OVERLAY --------------->
-    <div class="overlay hidden"></div>
+      <!------------- OVERLAY --------------->
+      <div class="overlay hidden"></div>
 
       <!------------- SKILLS-------------- -->
       <section id="skills">
-        <h3>Known:</h3>
-        <img src="/resources/images/icons8-javascript-96.png" alt="" title="JavaScript">
-        <img src="./resources/images/react-js.png" alt="" title="React">
-        <img src="/resources/images/icons8-redux-96.png" alt="" title="Redux">
-        <img src="/resources/images/jest-seeklogo.com.svg" alt="" title="Jest">
-        <img src="/resources/images/enzyme.png" alt="" title="Enzyme">
-        <img src="/resources/images/icons8-html-5-96.png" alt="" title="Html5">
-        <img src="/resources/images/icons8-css3-96.png" alt="" title="CSS3">
-        <img src="/resources/images/icons8-git-100.png" alt="" title="Git">
-        <img src="/resources/images/icons8-github-120.png" alt="" title="GitHub">
+        <h2>Skills:</h2>
+        <img
+          src="/resources/images/icons8-javascript-96.png"
+          alt=""
+          title="JavaScript"
+        />
+        <img src="./resources/images/react-js.png" alt="" title="React" />
+        <img src="/resources/images/icons8-redux-96.png" alt="" title="Redux" />
+        <img
+          src="/resources/images/jest-seeklogo.com.svg"
+          alt=""
+          title="Jest"
+        />
+        <img src="/resources/images/enzyme.png" alt="" title="Enzyme" />
+        <img
+          src="/resources/images/icons8-html-5-96.png"
+          alt=""
+          title="Html5"
+        />
+        <img src="/resources/images/icons8-css3-96.png" alt="" title="CSS3" />
+        <img src="/resources/images/icons8-git-100.png" alt="" title="Git" />
+        <img
+          src="/resources/images/icons8-github-120.png"
+          alt=""
+          title="GitHub"
+        />
         <h3>Learning:</h3>
-        <img src="/resources/images/react-testing-library.png" alt="" title="React-testing-library">
-        <img src="/resources/images/selenium.svg" alt="" title="Selenium">
-        
+        <img
+          src="/resources/images/react-testing-library.png"
+          alt=""
+          title="React-testing-library"
+        />
+        <img src="/resources/images/selenium.svg" alt="" title="Selenium" />
+      </section>
+
+      <section id="certificates">
+        <h2>Certificates:</h2>
+        <p class="hint-small-screen">
+          (Tap on the certificate to display larger pdf!)
+        </p>
+
+        <div class="certificates-container">
+          <div class="certificate-container">
+            <h3>Front-End Engineer</h3>
+            <img
+              data-project="front-end-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/Front-end-codecademy-small.png"
+              alt="front-end-engineer"
+              title="click for enlarged pdf format"
+            />
+            <div class="certificate-container-tooltip skewed-background">
+              <p>Click for enlarged pdf format!</p>
+            </div>
+          </div>
+
+          <div class="certificate-container">
+            <h3>JavaScript</h3>
+            <img
+              data-project="js-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/Javascript-codecademy-small.png"
+              alt="JavaScript"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>JavaScript</h3>
+            <img
+              data-project="js-udemy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/Javascript-Udemy-small.png"
+              alt="JavaScript"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>React</h3>
+            <img
+              data-project="react-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/React-codecademy-small.png"
+              alt="React"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>Redux</h3>
+            <img
+              data-project="redux-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/Redux-codecademy-small.png"
+              alt="Redux"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>React Testing</h3>
+            <img
+              data-project="react-testing-udemy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/React-testing-udemy-small.png"
+              alt="React-testing"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>React Router</h3>
+            <img
+              data-project="react-router-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/React_Router-Codecademy-small.png"
+              alt="React-router"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>Responsive Design</h3>
+            <img
+              data-project="responsive-design-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/Responsive-design-codecademy-small.png"
+              alt="responsive-design"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>CSS</h3>
+            <img
+              data-project="css-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/CSS-odecademy-small.png"
+              alt="css"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <div class="certificate-container">
+            <h3>HTML</h3>
+            <img
+              data-project="html-codecademy"
+              class="certificate-small modal-box-anchor"
+              src="/resources/certificates/Html-codecademy-small.png"
+              alt="html"
+              title="click for enlarged pdf format"
+            />
+          </div>
+
+          <!-- Modal boxes -->
+          <div id="front-end-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe
+              src="/resources/certificates/front-end-codecademy.pdf"
+            ></iframe>
+          </div>
+
+          <div id="js-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe
+              src="/resources/certificates/Javascript-codecademy.pdf"
+            ></iframe>
+          </div>
+
+          <div id="js-udemy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe src="/resources/certificates/Javascript-Udemy.pdf"></iframe>
+          </div>
+
+          <div id="react-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe src="/resources/certificates/React-codecademy.pdf"></iframe>
+          </div>
+
+          <div id="redux-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe src="/resources/certificates/Redux-codecademy.pdf"></iframe>
+          </div>
+
+          <div id="react-testing-udemy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe
+              src="/resources/certificates/React-testing-udemy.pdf"
+            ></iframe>
+          </div>
+
+          <div id="react-router-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe
+              src="/resources/certificates/React_Router-Codecademy.pdf"
+            ></iframe>
+          </div>
+
+          <div id="responsive-design-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe
+              src="/resources/certificates/Responsive-design-codecademy.pdf"
+            ></iframe>
+          </div>
+
+          <div id="css-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe src="/resources/certificates/CSS-odecademy.pdf"></iframe>
+          </div>
+
+          <div id="html-codecademy" class="modal-box hidden">
+            <button class="close-box">&times;</button>
+            <iframe src="/resources/certificates/Html-codecademy.pdf"></iframe>
+          </div>
+        </div>
       </section>
     </main>
-    
   </body>
 </html>

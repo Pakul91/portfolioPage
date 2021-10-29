@@ -1,4 +1,28 @@
 /* 1. Global styles */
+/* 2. Header styles */
+/* 3. Main styles */
+/* 4. Projects styles */
+/* 5. Skills styles */
+/* 7. Contact styles */
+/* 8. Modal box styles */
+/* 9. Overlay */
+/* 10. Hidden */
+/* 11. Skewed background */
+
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+/* 1. Global styles */
 html {
   font-size: 16px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -35,22 +59,22 @@ header {
 }
 
 nav {
-  position: absolute;
-  left: 58%;
+  flex-grow: 1;
   display: flex;
   margin-left: auto;
   align-items: center;
+  justify-content: flex-end;
 }
 
 nav p {
   margin-right: 1rem;
-  transition: all 0.75s;
+  transition: transform 0.3s, padding-bottom 0.3s;
 }
 
 nav p:hover {
-  padding-bottom: 10px;
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 5px rgba(19, 18, 18);
+  transform: translateY(0.5);
+  z-index: 10;
+  padding-bottom: 5px;
 }
 
 /* 3. Main styles */
@@ -67,9 +91,12 @@ nav p:hover {
   padding: 0.75rem 0 0 0.75rem;
   margin-right: 2rem;
   max-width: 60%;
+
+  padding-bottom: 1rem;
 }
 
 .resume span {
+  padding: 0 0.5rem;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -81,16 +108,16 @@ nav p:hover {
 
 .img-container {
   max-width: 30%;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
-.portrait {
+.pic {
   max-width: 100%;
   border-radius: 10%;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* 4. Project styles */
+/* 4. Projects styles */
 
 #projects {
   display: flex;
@@ -107,16 +134,16 @@ ul {
   margin-top: -1rem;
 }
 
-.hover {
-  margin-bottom: 0.25rem;
+.project {
+  max-width: 15rem;
+  margin: 1rem;
   font-size: 1.25rem;
-  transition: all 1s;
+  transition: transform ease-out 1s;
 }
 
-.hover:hover {
+.project:hover {
   cursor: pointer;
-  text-shadow: 1px 1px 5px rgba(19, 18, 18);
-  transform: translate(0.5rem);
+  transform: translate(1rem);
 }
 
 /* 5. Skills styles */
@@ -130,6 +157,56 @@ ul {
   height: 3rem;
 }
 
+/* 6. Certificates styles */
+#certificates {
+  display: block;
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-self: center;
+}
+
+.certificate-container {
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+
+.certificate-small {
+  width: 100%;
+  cursor: pointer;
+  transition: opacity ease-out 1s;
+}
+
+.certificate-container-tooltip {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: -50%;
+  z-index: 2;
+  opacity: 0;
+
+  text-align: center;
+  font-weight: 900;
+
+  transition: opacity ease-out 0.2s, transform ease-in-out 0.3s;
+}
+
+.certificate-small:hover ~ .certificate-container-tooltip {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
 /* 7. Contact styles */
 .contact-container {
   display: flex;
@@ -140,13 +217,15 @@ ul {
   margin: 0.5rem 1rem 0 0;
 }
 
-/* 8. Project box styles */
-.project-box {
-  position: absolute;
-  top: 5%;
+/* 8. Modal box styles */
+.modal-box {
+  position: fixed;
+  height: 90vh;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
-  width: 60%;
+  width: 70%;
+  overflow-y: scroll;
 
   background-color: rgba(255, 250, 250);
   padding: 2%;
@@ -156,9 +235,19 @@ ul {
   text-align: center;
 }
 
-.project-box a {
+.modal-box h2 {
+  display: inline-block;
+  padding: 1rem;
+}
+.modal-box a {
   font-size: 1rem;
   font-weight: bolder;
+}
+
+.modal-box iframe {
+  margin-top: 2rem;
+  width: 100%;
+  height: 80vh;
 }
 
 .project-img img {
@@ -170,8 +259,9 @@ ul {
   top: 2%;
   right: 2%;
   font-size: 2rem;
-  background: none;
-  border: none;
+  padding: 0.5rem;
+  background: var(--color-primary);
+
   cursor: pointer;
 }
 
@@ -193,17 +283,36 @@ ul {
   display: none;
 }
 
+/* 11.skewed-background */
+.skewed-background {
+  position: relative;
+}
+
+.skewed-background::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
+  box-shadow: 2px 3px 3px;
+}
+
+/* 12. Small screens */
+
 @media screen and (max-width: 810px) {
   html {
     font-size: 12px;
   }
 
   body {
+    margin-top: 3rem;
     max-width: 90%;
-  }
-
-  h1 {
-    margin-top: 5rem;
   }
 
   nav {
@@ -211,9 +320,11 @@ ul {
     width: 100%;
     top: 0;
     left: 0;
-    padding-left: 2rem;
     border-bottom: 1px solid black;
     background-color: white;
+    justify-content: flex-end;
+    box-shadow: 0px 1px 3px;
+    z-index: 10;
   }
 
   nav p:hover {
@@ -231,8 +342,45 @@ ul {
     padding-left: 0.75rem;
     margin-top: -1rem;
   }
-  .project-box {
+
+  .certificate-container {
+    width: 45%;
+  }
+
+  .modal-box {
+    width: 90%;
+  }
+
+  #about,
+  #projects,
+  #skills,
+  #certificates {
+    padding-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav a {
+    font-size: 3.5vw;
+  }
+
+  .resume-container {
+    flex-direction: column-reverse;
+  }
+
+  .resume {
+    max-width: 100%;
+  }
+
+  .certificate-container {
     width: 80%;
-    top: 25rem;
+  }
+
+  .certificate-container h3 {
+    font-size: 4vw;
+  }
+
+  .certificate-container-tooltip {
+    display: none;
   }
 }
