@@ -51,6 +51,10 @@ a {
   font-size: 1.25rem;
 }
 
+section {
+  position: relative;
+}
+
 /* 2. Header styles */
 header {
   display: flex;
@@ -84,6 +88,7 @@ nav p:hover {
 }
 
 .resume-container {
+  position: relative;
   display: flex;
 }
 
@@ -99,6 +104,8 @@ nav p:hover {
   padding: 0 0.5rem;
   font-size: 1.5rem;
   font-weight: 400;
+  border-radius: 0.2rem;
+  background: var(--color-primary);
 }
 
 .resume a {
@@ -364,12 +371,23 @@ ul {
     font-size: 3.5vw;
   }
 
+  #about h2 {
+    margin-top: 5rem;
+  }
+
   .resume-container {
     flex-direction: column-reverse;
+    margin-top: 2rem;
   }
 
   .resume {
     max-width: 100%;
+  }
+
+  .img-container {
+    position: absolute;
+    top: -35%;
+    right: 10%;
   }
 
   .certificate-container {
