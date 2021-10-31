@@ -321,7 +321,7 @@ ul {
 /* 8. Modal box styles */
 .modal-box {
   position: fixed;
-  height: 90vh;
+  max-height: 90vh;
   top: 1%;
   left: 50%;
   transform: translateX(-50%);
@@ -348,6 +348,7 @@ ul {
 
 .modal-box img {
   margin-top: 3rem;
+  width: 80%;
 }
 
 .project-img img {
