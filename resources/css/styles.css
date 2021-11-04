@@ -346,7 +346,8 @@ ul {
   border-bottom: 2px solid var(--color-primary);
 }
 
-.modal-box img {
+.modal-box img,
+.modal-box video {
   margin-top: 3rem;
   width: 80%;
 }
